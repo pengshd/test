@@ -1,0 +1,40 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost/data
+  datasource:
+    db1:
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/db1?serverTimezone=UTC&useSSL=false
+      url: jdbc:mysql://localhost:3306/db1?serverTimezone=UTC&useSSL=false
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+    db2:
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/db2?serverTimezone=UTC&useSSL=false
+      url: jdbc:mysql://localhost:3306/db2?serverTimezone=UTC&useSSL=false
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+  application:
+    name: learnspringboot
+
+druid:
+  filters: stat,wall,log4j2
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+logging:
+  level:
+    learn.dao: DEBUG
+
+
+aa:
+  bb:
+    a: test
+    b: 1099
