@@ -11,7 +11,7 @@
     </parent>
     <groupId>com.pengshd</groupId>
     <artifactId>learn-spring-boot</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <description>Demo project for Spring Boot</description>
 
     <properties>
